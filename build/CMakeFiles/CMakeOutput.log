@@ -1,0 +1,481 @@
+The target system is: Linux -  - 
+The host system is: Linux - 5.15.0-60-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/brian/muduo_lib/build/CMakeFiles/3.24.0-rc1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+cc1plus: warning: include location "/usr/include/mysql-arm" is unsafe for cross-compilation [-Wpoison-system-directories]
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/brian/muduo_lib/build/CMakeFiles/3.24.0-rc1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/brian/muduo_lib/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_744f6/fast && /usr/bin/make  -f CMakeFiles/cmTC_744f6.dir/build.make CMakeFiles/cmTC_744f6.dir/build
+make[1]: Entering directory '/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o
+/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.24/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed
+Thread model: posix
+gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/cc1 -quiet -v -iprefix /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/ -isysroot /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc -D __CS_SOURCERYGXX_MAJ__=2014 -D __CS_SOURCERYGXX_MIN__=5 -D __CS_SOURCERYGXX_REV__=29 /usr/local/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv5te -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -version -funwind-tables -o /tmp/ccc2fT8Q.s
+GNU C (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)
+	compiled by GNU C version 4.7.2, GMP version 5.0.5, MPFR version 3.1.1-p2, MPC version 1.0.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include"
+ignoring nonexistent directory "/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/local/include"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include
+ /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include
+End of search list.
+GNU C (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)
+	compiled by GNU C version 4.7.2, GMP version 5.0.5, MPFR version 3.1.1-p2, MPC version 1.0.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 6aba13becf054534a1fc101696595de0
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/as -v -march=armv5te -meabi=5 -o CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o /tmp/ccc2fT8Q.s
+GNU assembler version 2.24.51 (arm-none-linux-gnueabi) using BFD version (Sourcery CodeBench Lite 2014.05-29) 2.24.51.20140217
+COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+Linking C executable cmTC_744f6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_744f6.dir/link.txt --verbose=1
+/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc  -v -rdynamic CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -o cmTC_744f6 
+Using built-in specs.
+COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc
+COLLECT_LTO_WRAPPER=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/lto-wrapper
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed
+Thread model: posix
+gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) 
+COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_744f6' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/collect2 --sysroot=/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_744f6 /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3 -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+make[1]: Leaving directory '/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include]
+  implicit include dirs: [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/brian/muduo_lib/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_744f6/fast && /usr/bin/make  -f CMakeFiles/cmTC_744f6.dir/build.make CMakeFiles/cmTC_744f6.dir/build]
+  ignore line: [make[1]: Entering directory '/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc   -v -o CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.24/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/cc1 -quiet -v -iprefix /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/ -isysroot /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc -D __CS_SOURCERYGXX_MAJ__=2014 -D __CS_SOURCERYGXX_MIN__=5 -D __CS_SOURCERYGXX_REV__=29 /usr/local/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv5te -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -version -funwind-tables -o /tmp/ccc2fT8Q.s]
+  ignore line: [GNU C (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 4.7.2  GMP version 5.0.5  MPFR version 3.1.1-p2  MPC version 1.0.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 4.7.2  GMP version 5.0.5  MPFR version 3.1.1-p2  MPC version 1.0.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 6aba13becf054534a1fc101696595de0]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/as -v -march=armv5te -meabi=5 -o CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o /tmp/ccc2fT8Q.s]
+  ignore line: [GNU assembler version 2.24.51 (arm-none-linux-gnueabi) using BFD version (Sourcery CodeBench Lite 2014.05-29) 2.24.51.20140217]
+  ignore line: [COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o' '-c' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  ignore line: [Linking C executable cmTC_744f6]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_744f6.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc  -v -rdynamic CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -o cmTC_744f6 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/lto-wrapper]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) ]
+  ignore line: [COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_744f6' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  link line: [ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/collect2 --sysroot=/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_744f6 /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3 -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/collect2] ==> ignore
+    arg [--sysroot=/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_744f6] ==> ignore
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib]
+    arg [CMakeFiles/cmTC_744f6.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crt1.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crti.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/lib]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/lib]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crt1.o;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crti.o;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+  implicit dirs: [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3;/usr/local/HTZX-arm-4.8.3/lib/gcc;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/lib;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/lib;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/brian/muduo_lib/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_bf975/fast && /usr/bin/make  -f CMakeFiles/cmTC_bf975.dir/build.make CMakeFiles/cmTC_bf975.dir/build
+make[1]: Entering directory '/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++   -v -o CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed
+Thread model: posix
+gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/cc1plus -quiet -v -iprefix /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/ -isysroot /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc -D_GNU_SOURCE -D __CS_SOURCERYGXX_MAJ__=2014 -D __CS_SOURCERYGXX_MIN__=5 -D __CS_SOURCERYGXX_REV__=29 /usr/local/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv5te -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -version -funwind-tables -o /tmp/ccgy6F7H.s
+GNU C++ (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)
+	compiled by GNU C version 4.7.2, GMP version 5.0.5, MPFR version 3.1.1-p2, MPC version 1.0.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/mysql-arm"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/backward"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include"
+ignoring nonexistent directory "/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/local/include"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed"
+ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ .
+ /usr/include/mysql-arm
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/backward
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include
+ /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include
+End of search list.
+cc1plus: warning: include location "/usr/include/mysql-arm" is unsafe for cross-compilation [-Wpoison-system-directories]
+GNU C++ (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)
+	compiled by GNU C version 4.7.2, GMP version 5.0.5, MPFR version 3.1.1-p2, MPC version 1.0.1
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 5218dff67807eecb1abfd37f60a80ce7
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/as -v -march=armv5te -meabi=5 -o CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgy6F7H.s
+GNU assembler version 2.24.51 (arm-none-linux-gnueabi) using BFD version (Sourcery CodeBench Lite 2014.05-29) 2.24.51.20140217
+COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+Linking CXX executable cmTC_bf975
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf975.dir/link.txt --verbose=1
+/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++  -v -rdynamic CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bf975 
+Using built-in specs.
+COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++
+COLLECT_LTO_WRAPPER=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/lto-wrapper
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c,c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed
+Thread model: posix
+gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) 
+COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_bf975' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29'
+ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/collect2 --sysroot=/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_bf975 /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3 -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+make[1]: Leaving directory '/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [.]
+    add: [/usr/include/mysql-arm]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/backward]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include]
+    add: [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include]
+  end of search list found
+  skipping relative include dir [.]
+  collapse include dir [/usr/include/mysql-arm] ==> [/usr/include/mysql-arm]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/backward] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/backward]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include]
+  collapse include dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include]
+  implicit include dirs: [/usr/include/mysql-arm;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/backward;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/brian/muduo_lib/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_bf975/fast && /usr/bin/make  -f CMakeFiles/cmTC_bf975.dir/build.make CMakeFiles/cmTC_bf975.dir/build]
+  ignore line: [make[1]: Entering directory '/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++   -v -o CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/cc1plus -quiet -v -iprefix /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/ -isysroot /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc -D_GNU_SOURCE -D __CS_SOURCERYGXX_MAJ__=2014 -D __CS_SOURCERYGXX_MIN__=5 -D __CS_SOURCERYGXX_REV__=29 /usr/local/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv5te -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -version -funwind-tables -o /tmp/ccgy6F7H.s]
+  ignore line: [GNU C++ (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 4.7.2  GMP version 5.0.5  MPFR version 3.1.1-p2  MPC version 1.0.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/mysql-arm"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/backward"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed"]
+  ignore line: [ignoring duplicate directory "/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/../../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ .]
+  ignore line: [ /usr/include/mysql-arm]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include/c++/4.8.3/backward]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/include]
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [cc1plus: warning: include location "/usr/include/mysql-arm" is unsafe for cross-compilation [-Wpoison-system-directories]]
+  ignore line: [GNU C++ (Sourcery CodeBench Lite 2014.05-29) version 4.8.3 20140320 (prerelease) (arm-none-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 4.7.2  GMP version 5.0.5  MPFR version 3.1.1-p2  MPC version 1.0.1]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 5218dff67807eecb1abfd37f60a80ce7]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  ignore line: [ /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/as -v -march=armv5te -meabi=5 -o CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgy6F7H.s]
+  ignore line: [GNU assembler version 2.24.51 (arm-none-linux-gnueabi) using BFD version (Sourcery CodeBench Lite 2014.05-29) 2.24.51.20140217]
+  ignore line: [COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  ignore line: [Linking CXX executable cmTC_bf975]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf975.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++  -v -rdynamic CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_bf975 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/lto-wrapper]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/maciej/arm-linux-2014.05-rel/src/gcc-4.8-2014.05/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{save-temps: -fverbose-asm} %{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} -D__CS_SOURCERYGXX_MAJ__=2014 -D__CS_SOURCERYGXX_MIN__=5 -D__CS_SOURCERYGXX_REV__=29' --enable-languages=c c++ --enable-shared --enable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery CodeBench Lite 2014.05-29' --with-bugurl=https://sourcery.mentor.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/libc --with-gmp=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpfr=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-mpc=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-isl=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --with-cloog=/scratch/maciej/arm-linux-2014.05-rel/obj/pkg-2014.05-29-arm-none-linux-gnueabi/arm-2014.05-29-arm-none-linux-gnueabi.extras/host-libs-i686-pc-linux-gnu/usr --disable-libgomp --disable-libitm --enable-libatomic --disable-libssp --enable-poison-system-directories --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/maciej/arm-linux-2014.05-rel/install/opt/codesourcery/arm-none-linux-gnueabi/bin SED=sed]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.3 20140320 (prerelease) (Sourcery CodeBench Lite 2014.05-29) ]
+  ignore line: [COMPILER_PATH=/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/:/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib/:/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_bf975' '-shared-libgcc' '-march=armv5te' '-mtls-dialect=gnu' '-funwind-tables' '-D' '__CS_SOURCERYGXX_MAJ__=2014' '-D' '__CS_SOURCERYGXX_MIN__=5' '-D' '__CS_SOURCERYGXX_REV__=29']
+  link line: [ /usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/collect2 --sysroot=/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTC_bf975 /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3 -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc -L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib -L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o /usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.8.3/collect2] ==> ignore
+    arg [--sysroot=/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_bf975] ==> ignore
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib]
+    arg [-L/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib]
+    arg [CMakeFiles/cmTC_bf975.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o]
+    arg [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crt1.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crti.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o]
+  collapse obj [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc] ==> [/usr/local/HTZX-arm-4.8.3/lib/gcc]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../lib/gcc/arm-none-linux-gnueabi/4.8.3/../../../../arm-none-linux-gnueabi/lib] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/lib]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/lib] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/lib]
+  collapse library dir [/usr/local/HTZX-arm-4.8.3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crt1.o;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crti.o;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtbegin.o;/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/crtend.o;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+  implicit dirs: [/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3;/usr/local/HTZX-arm-4.8.3/lib/gcc;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/lib;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/lib;/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1y] compiler features compiled with the following output:
+Change Dir: /home/brian/muduo_lib/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3e546/fast && /usr/bin/make  -f CMakeFiles/cmTC_3e546.dir/build.make CMakeFiles/cmTC_3e546.dir/build
+make[1]: 进入目录“/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_3e546.dir/feature_tests.cxx.o
+/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++   -std=c++1y -o CMakeFiles/cmTC_3e546.dir/feature_tests.cxx.o -c /home/brian/muduo_lib/build/CMakeFiles/feature_tests.cxx
+cc1plus: warning: include location "/usr/include/mysql-arm" is unsafe for cross-compilation [-Wpoison-system-directories]
+Linking CXX executable cmTC_3e546
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e546.dir/link.txt --verbose=1
+/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -rdynamic CMakeFiles/cmTC_3e546.dir/feature_tests.cxx.o -o cmTC_3e546 
+make[1]: 离开目录“/home/brian/muduo_lib/build/CMakeFiles/CMakeTmp”
+
+
+
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_variable_templates

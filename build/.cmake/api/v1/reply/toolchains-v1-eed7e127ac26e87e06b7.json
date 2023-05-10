@@ -1,0 +1,108 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include",
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3",
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/lib",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/lib",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-gcc",
+				"version" : "4.8.3"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/usr/include/mysql-arm",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/backward",
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include",
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include-fixed",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3",
+						"/usr/local/HTZX-arm-4.8.3/lib/gcc",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/lib",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/lib",
+						"/usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++",
+				"version" : "4.8.3"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
