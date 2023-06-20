@@ -124,7 +124,8 @@ CMakeFiles/mymuduo.dir/UdpConnector.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/termios.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/termios.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h \
- /home/brian/muduo_lib/EventLoop.h /home/brian/muduo_lib/Timestamp.h \
+ /home/brian/muduo_lib/Logger.h /home/brian/muduo_lib/EventLoop.h \
+ /home/brian/muduo_lib/Timestamp.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/iostream \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/ostream \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/ios \
@@ -180,7 +181,7 @@ CMakeFiles/mymuduo.dir/UdpConnector.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/hashtable.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/hashtable_policy.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/unordered_map.h \
- /home/brian/muduo_lib/TimerId.h /home/brian/muduo_lib/Logger.h \
+ /home/brian/muduo_lib/TimerId.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/atomic \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/atomic_base.h \
  /usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include/stdbool.h \
@@ -195,4 +196,5 @@ CMakeFiles/mymuduo.dir/UdpConnector.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/ctime \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/system_error \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi/bits/error_constants.h \
- /home/brian/muduo_lib/Channel.h /home/brian/muduo_lib/Socket.h
+ /home/brian/muduo_lib/Channel.h /home/brian/muduo_lib/Socket.h \
+ /home/brian/muduo_lib/AbstractConnector.h

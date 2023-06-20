@@ -16,6 +16,7 @@ Channel::Channel(EventLoop *loop, int fd)
                 , index_(-1)
                 , tied_(false)
 {
+    LOG_INFO("Channel ctor...");
 }
 
 Channel::~Channel()
@@ -43,9 +44,10 @@ void Channel::remove()
 
 void Channel::handleEvent(Timestamp receiveTime)
 {
-    if(tied_)
+    std::shared_ptr<void> guard;
+    if (tied_)
     {
-        std::shared_ptr<void> guard = tie_.lock();
+        guard = tie_.lock();
         if(guard)
         {
             handleEventWithGuard(receiveTime);

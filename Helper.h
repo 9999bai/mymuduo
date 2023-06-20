@@ -5,6 +5,9 @@
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include "Logger.h"
+
+class EventLoop;
 
 namespace sockets
 {
@@ -18,9 +21,11 @@ namespace sockets
     struct sockaddr_in getPeerAddr(int sockfd);
     bool isSelfConnect(int sockfd);
 
-}   // namespace sockets
+}; // namespace sockets
 namespace mymuduo
 {
+    EventLoop *CheckLoopNotNull(EventLoop *loop);
+
     typedef enum{
         enum_data_res_normal,
         enum_data_res_error,
@@ -42,4 +47,4 @@ namespace mymuduo
         int stopBits; 
         enum_data_parityBit parityBit;
     } struct_serial;
-}
+};

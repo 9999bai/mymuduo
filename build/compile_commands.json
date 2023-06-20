@@ -1,6 +1,16 @@
 [
 {
   "directory": "/home/brian/muduo_lib/build",
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o -c /home/brian/muduo_lib/AbstractConnection.cpp",
+  "file": "/home/brian/muduo_lib/AbstractConnection.cpp"
+},
+{
+  "directory": "/home/brian/muduo_lib/build",
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o -c /home/brian/muduo_lib/AbstractConnector.cpp",
+  "file": "/home/brian/muduo_lib/AbstractConnector.cpp"
+},
+{
+  "directory": "/home/brian/muduo_lib/build",
   "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Acceptor.cpp.o -c /home/brian/muduo_lib/Acceptor.cpp",
   "file": "/home/brian/muduo_lib/Acceptor.cpp"
 },
@@ -18,11 +28,6 @@
   "directory": "/home/brian/muduo_lib/build",
   "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Condition.cpp.o -c /home/brian/muduo_lib/Condition.cpp",
   "file": "/home/brian/muduo_lib/Condition.cpp"
-},
-{
-  "directory": "/home/brian/muduo_lib/build",
-  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Connector.cpp.o -c /home/brian/muduo_lib/Connector.cpp",
-  "file": "/home/brian/muduo_lib/Connector.cpp"
 },
 {
   "directory": "/home/brian/muduo_lib/build",
@@ -71,13 +76,18 @@
 },
 {
   "directory": "/home/brian/muduo_lib/build",
-  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/SerialConnector.cpp.o -c /home/brian/muduo_lib/SerialConnector.cpp",
-  "file": "/home/brian/muduo_lib/SerialConnector.cpp"
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/SerialPort.cpp.o -c /home/brian/muduo_lib/SerialPort.cpp",
+  "file": "/home/brian/muduo_lib/SerialPort.cpp"
 },
 {
   "directory": "/home/brian/muduo_lib/build",
-  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/SerialPort.cpp.o -c /home/brian/muduo_lib/SerialPort.cpp",
-  "file": "/home/brian/muduo_lib/SerialPort.cpp"
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o -c /home/brian/muduo_lib/SerialPortConnection.cpp",
+  "file": "/home/brian/muduo_lib/SerialPortConnection.cpp"
+},
+{
+  "directory": "/home/brian/muduo_lib/build",
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o -c /home/brian/muduo_lib/SerialPortConnector.cpp",
+  "file": "/home/brian/muduo_lib/SerialPortConnector.cpp"
 },
 {
   "directory": "/home/brian/muduo_lib/build",
@@ -88,6 +98,11 @@
   "directory": "/home/brian/muduo_lib/build",
   "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/TcpClient.cpp.o -c /home/brian/muduo_lib/TcpClient.cpp",
   "file": "/home/brian/muduo_lib/TcpClient.cpp"
+},
+{
+  "directory": "/home/brian/muduo_lib/build",
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o -c /home/brian/muduo_lib/TcpClientConnector.cpp",
+  "file": "/home/brian/muduo_lib/TcpClientConnector.cpp"
 },
 {
   "directory": "/home/brian/muduo_lib/build",
@@ -128,6 +143,11 @@
   "directory": "/home/brian/muduo_lib/build",
   "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/UdpClient.cpp.o -c /home/brian/muduo_lib/UdpClient.cpp",
   "file": "/home/brian/muduo_lib/UdpClient.cpp"
+},
+{
+  "directory": "/home/brian/muduo_lib/build",
+  "command": "/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ -Dmymuduo_EXPORTS -I/home/brian/muduo_lib/.  -g -std=c++11 -pthread -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/UdpConnection.cpp.o -c /home/brian/muduo_lib/UdpConnection.cpp",
+  "file": "/home/brian/muduo_lib/UdpConnection.cpp"
 },
 {
   "directory": "/home/brian/muduo_lib/build",

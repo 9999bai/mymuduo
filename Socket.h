@@ -10,7 +10,7 @@ public:
     explicit Socket(int sockfd) : sockfd_(sockfd) {}
     ~Socket();
     
-    int fd() const { return sockfd_; }
+    int fd() { return sockfd_; }
     bool bindAddress(const InetAddress& localaddr);
     void listen();
     int accept(InetAddress *peeraddr);

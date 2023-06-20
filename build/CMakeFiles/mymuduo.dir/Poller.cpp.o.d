@@ -155,4 +155,5 @@ CMakeFiles/mymuduo.dir/Poller.cpp.o: /home/brian/muduo_lib/Poller.cpp \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/unique_ptr.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/shared_ptr.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/shared_ptr_base.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/backward/auto_ptr.h
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/backward/auto_ptr.h \
+ /home/brian/muduo_lib/Logger.h

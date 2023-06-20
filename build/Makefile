@@ -149,6 +149,54 @@ mymuduo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/build
 .PHONY : mymuduo/fast
 
+AbstractConnection.o: AbstractConnection.cpp.o
+.PHONY : AbstractConnection.o
+
+# target to build an object file
+AbstractConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o
+.PHONY : AbstractConnection.cpp.o
+
+AbstractConnection.i: AbstractConnection.cpp.i
+.PHONY : AbstractConnection.i
+
+# target to preprocess a source file
+AbstractConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/AbstractConnection.cpp.i
+.PHONY : AbstractConnection.cpp.i
+
+AbstractConnection.s: AbstractConnection.cpp.s
+.PHONY : AbstractConnection.s
+
+# target to generate assembly for a file
+AbstractConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/AbstractConnection.cpp.s
+.PHONY : AbstractConnection.cpp.s
+
+AbstractConnector.o: AbstractConnector.cpp.o
+.PHONY : AbstractConnector.o
+
+# target to build an object file
+AbstractConnector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o
+.PHONY : AbstractConnector.cpp.o
+
+AbstractConnector.i: AbstractConnector.cpp.i
+.PHONY : AbstractConnector.i
+
+# target to preprocess a source file
+AbstractConnector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/AbstractConnector.cpp.i
+.PHONY : AbstractConnector.cpp.i
+
+AbstractConnector.s: AbstractConnector.cpp.s
+.PHONY : AbstractConnector.s
+
+# target to generate assembly for a file
+AbstractConnector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/AbstractConnector.cpp.s
+.PHONY : AbstractConnector.cpp.s
+
 Acceptor.o: Acceptor.cpp.o
 .PHONY : Acceptor.o
 
@@ -244,30 +292,6 @@ Condition.s: Condition.cpp.s
 Condition.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Condition.cpp.s
 .PHONY : Condition.cpp.s
-
-Connector.o: Connector.cpp.o
-.PHONY : Connector.o
-
-# target to build an object file
-Connector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Connector.cpp.o
-.PHONY : Connector.cpp.o
-
-Connector.i: Connector.cpp.i
-.PHONY : Connector.i
-
-# target to preprocess a source file
-Connector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Connector.cpp.i
-.PHONY : Connector.cpp.i
-
-Connector.s: Connector.cpp.s
-.PHONY : Connector.s
-
-# target to generate assembly for a file
-Connector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Connector.cpp.s
-.PHONY : Connector.cpp.s
 
 CurrentThread.o: CurrentThread.cpp.o
 .PHONY : CurrentThread.o
@@ -485,30 +509,6 @@ Poller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Poller.cpp.s
 .PHONY : Poller.cpp.s
 
-SerialConnector.o: SerialConnector.cpp.o
-.PHONY : SerialConnector.o
-
-# target to build an object file
-SerialConnector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialConnector.cpp.o
-.PHONY : SerialConnector.cpp.o
-
-SerialConnector.i: SerialConnector.cpp.i
-.PHONY : SerialConnector.i
-
-# target to preprocess a source file
-SerialConnector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialConnector.cpp.i
-.PHONY : SerialConnector.cpp.i
-
-SerialConnector.s: SerialConnector.cpp.s
-.PHONY : SerialConnector.s
-
-# target to generate assembly for a file
-SerialConnector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialConnector.cpp.s
-.PHONY : SerialConnector.cpp.s
-
 SerialPort.o: SerialPort.cpp.o
 .PHONY : SerialPort.o
 
@@ -532,6 +532,54 @@ SerialPort.s: SerialPort.cpp.s
 SerialPort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPort.cpp.s
 .PHONY : SerialPort.cpp.s
+
+SerialPortConnection.o: SerialPortConnection.cpp.o
+.PHONY : SerialPortConnection.o
+
+# target to build an object file
+SerialPortConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o
+.PHONY : SerialPortConnection.cpp.o
+
+SerialPortConnection.i: SerialPortConnection.cpp.i
+.PHONY : SerialPortConnection.i
+
+# target to preprocess a source file
+SerialPortConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.i
+.PHONY : SerialPortConnection.cpp.i
+
+SerialPortConnection.s: SerialPortConnection.cpp.s
+.PHONY : SerialPortConnection.s
+
+# target to generate assembly for a file
+SerialPortConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.s
+.PHONY : SerialPortConnection.cpp.s
+
+SerialPortConnector.o: SerialPortConnector.cpp.o
+.PHONY : SerialPortConnector.o
+
+# target to build an object file
+SerialPortConnector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o
+.PHONY : SerialPortConnector.cpp.o
+
+SerialPortConnector.i: SerialPortConnector.cpp.i
+.PHONY : SerialPortConnector.i
+
+# target to preprocess a source file
+SerialPortConnector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.i
+.PHONY : SerialPortConnector.cpp.i
+
+SerialPortConnector.s: SerialPortConnector.cpp.s
+.PHONY : SerialPortConnector.s
+
+# target to generate assembly for a file
+SerialPortConnector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.s
+.PHONY : SerialPortConnector.cpp.s
 
 Socket.o: Socket.cpp.o
 .PHONY : Socket.o
@@ -580,6 +628,30 @@ TcpClient.s: TcpClient.cpp.s
 TcpClient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/TcpClient.cpp.s
 .PHONY : TcpClient.cpp.s
+
+TcpClientConnector.o: TcpClientConnector.cpp.o
+.PHONY : TcpClientConnector.o
+
+# target to build an object file
+TcpClientConnector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o
+.PHONY : TcpClientConnector.cpp.o
+
+TcpClientConnector.i: TcpClientConnector.cpp.i
+.PHONY : TcpClientConnector.i
+
+# target to preprocess a source file
+TcpClientConnector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.i
+.PHONY : TcpClientConnector.cpp.i
+
+TcpClientConnector.s: TcpClientConnector.cpp.s
+.PHONY : TcpClientConnector.s
+
+# target to generate assembly for a file
+TcpClientConnector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.s
+.PHONY : TcpClientConnector.cpp.s
 
 TcpConnection.o: TcpConnection.cpp.o
 .PHONY : TcpConnection.o
@@ -773,6 +845,30 @@ UdpClient.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/UdpClient.cpp.s
 .PHONY : UdpClient.cpp.s
 
+UdpConnection.o: UdpConnection.cpp.o
+.PHONY : UdpConnection.o
+
+# target to build an object file
+UdpConnection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/UdpConnection.cpp.o
+.PHONY : UdpConnection.cpp.o
+
+UdpConnection.i: UdpConnection.cpp.i
+.PHONY : UdpConnection.i
+
+# target to preprocess a source file
+UdpConnection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/UdpConnection.cpp.i
+.PHONY : UdpConnection.cpp.i
+
+UdpConnection.s: UdpConnection.cpp.s
+.PHONY : UdpConnection.s
+
+# target to generate assembly for a file
+UdpConnection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/UdpConnection.cpp.s
+.PHONY : UdpConnection.cpp.s
+
 UdpConnector.o: UdpConnector.cpp.o
 .PHONY : UdpConnector.o
 
@@ -808,6 +904,12 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... mymuduo"
+	@echo "... AbstractConnection.o"
+	@echo "... AbstractConnection.i"
+	@echo "... AbstractConnection.s"
+	@echo "... AbstractConnector.o"
+	@echo "... AbstractConnector.i"
+	@echo "... AbstractConnector.s"
 	@echo "... Acceptor.o"
 	@echo "... Acceptor.i"
 	@echo "... Acceptor.s"
@@ -820,9 +922,6 @@ help:
 	@echo "... Condition.o"
 	@echo "... Condition.i"
 	@echo "... Condition.s"
-	@echo "... Connector.o"
-	@echo "... Connector.i"
-	@echo "... Connector.s"
 	@echo "... CurrentThread.o"
 	@echo "... CurrentThread.i"
 	@echo "... CurrentThread.s"
@@ -850,18 +949,24 @@ help:
 	@echo "... Poller.o"
 	@echo "... Poller.i"
 	@echo "... Poller.s"
-	@echo "... SerialConnector.o"
-	@echo "... SerialConnector.i"
-	@echo "... SerialConnector.s"
 	@echo "... SerialPort.o"
 	@echo "... SerialPort.i"
 	@echo "... SerialPort.s"
+	@echo "... SerialPortConnection.o"
+	@echo "... SerialPortConnection.i"
+	@echo "... SerialPortConnection.s"
+	@echo "... SerialPortConnector.o"
+	@echo "... SerialPortConnector.i"
+	@echo "... SerialPortConnector.s"
 	@echo "... Socket.o"
 	@echo "... Socket.i"
 	@echo "... Socket.s"
 	@echo "... TcpClient.o"
 	@echo "... TcpClient.i"
 	@echo "... TcpClient.s"
+	@echo "... TcpClientConnector.o"
+	@echo "... TcpClientConnector.i"
+	@echo "... TcpClientConnector.s"
 	@echo "... TcpConnection.o"
 	@echo "... TcpConnection.i"
 	@echo "... TcpConnection.s"
@@ -886,6 +991,9 @@ help:
 	@echo "... UdpClient.o"
 	@echo "... UdpClient.i"
 	@echo "... UdpClient.s"
+	@echo "... UdpConnection.o"
+	@echo "... UdpConnection.i"
+	@echo "... UdpConnection.s"
 	@echo "... UdpConnector.o"
 	@echo "... UdpConnector.i"
 	@echo "... UdpConnector.s"

@@ -176,6 +176,18 @@ CMakeFiles/mymuduo.dir/TcpConnection.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/termios.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/termios.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h \
+ /home/brian/muduo_lib/Logger.h \
+ /home/brian/muduo_lib/AbstractConnection.h \
+ /home/brian/muduo_lib/EventLoop.h /home/brian/muduo_lib/CurrentThread.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/unistd.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/environments.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/syscall.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/asm/unistd.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/syscall.h \
+ /home/brian/muduo_lib/TimerId.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/atomic \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/atomic_base.h \
  /usr/local/HTZX-arm-4.8.3/lib/gcc/arm-none-linux-gnueabi/4.8.3/include/stdbool.h \
@@ -186,17 +198,6 @@ CMakeFiles/mymuduo.dir/TcpConnection.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/ctime \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/system_error \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi/bits/error_constants.h \
- /home/brian/muduo_lib/Logger.h /home/brian/muduo_lib/Socket.h \
- /home/brian/muduo_lib/Channel.h /home/brian/muduo_lib/EventLoop.h \
- /home/brian/muduo_lib/CurrentThread.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/unistd.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/posix_opt.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/environments.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/getopt.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/syscall.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/asm/unistd.h \
- /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/syscall.h \
- /home/brian/muduo_lib/TimerId.h \
+ /home/brian/muduo_lib/Socket.h /home/brian/muduo_lib/Channel.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/netinet/tcp.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/strings.h

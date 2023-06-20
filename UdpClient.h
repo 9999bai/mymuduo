@@ -3,7 +3,7 @@
 #include "noncopyable.h"
 #include "EventLoop.h"
 #include "UdpConnector.h"
-#include "TcpConnection.h"
+#include "UdpConnection.h"
 #include "Logger.h"
 #include "Callbacks.h"
 #include "InetAddress.h"
@@ -17,7 +17,7 @@
 class UdpClient : noncopyable
 {
 public:
-    using UdpConnectorPtr = std::shared_ptr<UdpConnector>;
+    // using UdpConnectorPtr = std::shared_ptr<UdpConnector>;
 
     UdpClient(EventLoop* loop, const std::string& name, const InetAddress& serveraddr, const std::string& localIp);
     ~UdpClient();
@@ -25,7 +25,7 @@ public:
     void connect();
     void disconnect();
     void stop();
-    TcpConnectionPtr connection();
+    ConnectionPtr connection();
 
     EventLoop* getLoop() const { return loop_; }
     bool retry() const { return retry_; }
@@ -38,12 +38,12 @@ public:
 
 private:
     void newConnection(int sockfd);
-    void removeConnection(const TcpConnectionPtr& conn);
+    void removeConnection(const ConnectionPtr& conn);
 
     EventLoop* loop_;
-    UdpConnectorPtr connector_;
+    ConnectorPtr UDPconnector_;
     const std::string name_;
-    const InetAddress serveraddr_;
+    // const InetAddress serveraddr_;
 
     ConnectionCallback connectionCallback_;
     MessageCallback messageCallback_;
@@ -54,5 +54,5 @@ private:
 
     // int nextConnId_;
     std::mutex mutex_;
-    TcpConnectionPtr connection_;
+    ConnectionPtr UDPconnection_;
 };

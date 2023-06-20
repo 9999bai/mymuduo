@@ -1,29 +1,34 @@
 #include "SerialPort.h"
-
+#include <functional>
+#include "SerialPortConnector.h"
+#include "SerialPortConnection.h"
 
 namespace detail
 {
-    void removeConnection(EventLoop* loop, const TcpConnectionPtr& conn)
+    void removeConnection(EventLoop* loop, const ConnectionPtr& conn)
     {
-        loop->queueInLoop(std::bind(&TcpConnection::connectDestroyed, conn));
+        loop->queueInLoop(std::bind(&AbstractConnection::connectDestroyed, conn));
     }
-}
+};
 
 SerialPort::SerialPort(EventLoop* loop, const mymuduo::struct_serial& serialConfig)
             : loop_(loop)
-            , connector_(std::make_shared<SerialConnector>(loop,serialConfig))
+            , connector_(new SerialPortConnector(loop,serialConfig))
             , serialName_(serialConfig.serialName)
             , retry_(false)
             , connect_(true)
             , nextConnectId_(1)
 {
-    LOG_INFO("SerialPort  ctor ...");
+    LOG_INFO("SerialPort  ctor1...");
+
+    // connector_ = std::make_shared<SerialPortConnector>(loop, serialConfig);
+    LOG_INFO("SerialPort  ctor2...");
     connector_->setNewConnectionCallback(std::bind(&SerialPort::newConnection, this, std::placeholders::_1));
 }
 
 SerialPort::~SerialPort()
 {
-    TcpConnectionPtr conn;
+    ConnectionPtr conn;
     bool unique = false;
     {
         std::unique_lock<std::mutex> lock(mutex_);
@@ -70,7 +75,7 @@ void SerialPort::stop()
     connector_->stop();
 }
 
-TcpConnectionPtr SerialPort::connection()
+ConnectionPtr SerialPort::connection()
 {
     std::unique_lock<std::mutex> lock(mutex_);
     return connection_;
@@ -85,8 +90,8 @@ void SerialPort::newConnection(int sockfd)
     ++nextConnectId_;
     std::string connName = buf;
 
-    // TcpConnectionPtr conn(new TcpConnection(loop_, connName, sockfd));
-    TcpConnectionPtr conn = std::make_shared<TcpConnection>(loop_, connName, sockfd);
+    // ConnectionPtr conn(new TcpConnection(loop_, connName, sockfd));
+    ConnectionPtr conn = std::make_shared<SerialPortConnection>(loop_, connName, sockfd);
     // new TcpConnection(loop_, connName, sockfd);
     conn->setConnectionCallback(connectionCallback_);
     conn->setMessageCallback(messageCallback_);
@@ -99,14 +104,14 @@ void SerialPort::newConnection(int sockfd)
     conn->connectEstablished();
 }
 
-void SerialPort::removeConnection(const TcpConnectionPtr& conn)
+void SerialPort::removeConnection(const ConnectionPtr& conn)
 {
     loop_->assertInLoopThread();
     {
         std::unique_lock<std::mutex> lock(mutex_);
         connection_.reset();
     }
-    loop_->queueInLoop(std::bind(&TcpConnection::connectDestroyed, conn));
+    loop_->queueInLoop(std::bind(&AbstractConnection::connectDestroyed, conn));
     if(retry_ && connect_)
     {
         LOG_INFO("SerialPort:: %s Reconnect----\n", serialName_.c_str());

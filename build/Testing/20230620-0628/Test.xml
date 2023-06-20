@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-arm-linux-g++"
+	BuildStamp="20230620-0628-Experimental"
+	Name="brian"
+	Generator="ctest-3.24.0-rc1"
+	CompilerName="/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++"
+	CompilerVersion="4.8.3"
+	OSName="Linux"
+	Hostname="brian"
+	OSRelease="5.15.0-73-generic"
+	OSVersion="#80~20.04.1-Ubuntu SMP Wed May 17 14:58:14 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="167"
+	ProcessorCacheSize="16384"
+	NumberOfLogicalCPU="12"
+	NumberOfPhysicalCPU="12"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="7915"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2496"
+	>
+	<Testing>
+		<StartDateTime>Jun 20 14:28 CST</StartDateTime>
+		<StartTestTime>1687242487</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 20 14:28 CST</EndDateTime>
+		<EndTestTime>1687242487</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

@@ -4,7 +4,7 @@ class testTcpClient
 {
 public:
     testTcpClient(EventLoop* loop, const InetAddress& serverAddr)
-        : loop_(loop), tcpclient_(loop, serverAddr, "test")
+        : loop_(loop), tcpclient_(loop,"test", serverAddr)
     {
         tcpclient_.setConnectionCallback(std::bind(&testTcpClient::onConnect, this, std::placeholders::_1));
         tcpclient_.setMessageCallback(std::bind(&testTcpClient::onMessage, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
@@ -16,7 +16,7 @@ public:
 
 private:
 
-    void onConnect(const TcpConnectionPtr& conn)
+    void onConnect(const ConnectionPtr& conn)
     {
         if(conn->connected())
         {
@@ -29,7 +29,7 @@ private:
         }
     }
 
-    void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp time)
+    void onMessage(const ConnectionPtr& conn, Buffer* buf, Timestamp time)
     {
         std::string msg = buf->retrieveAllAsString();
         LOG_INFO("onMessage connection[%s] RX : %s ",conn->peerAddr().toIpPort().c_str(), msg.c_str());
@@ -47,8 +47,8 @@ int main()
     testTcpClient client1(&loop, serverAddr);
     client1.connect();
 
-    // InetAddress serverAddr(8000, "192.168.2.102");
-    testTcpClient client2(&loop, serverAddr);
+    InetAddress serverAddr2(8001, "192.168.2.102");
+    testTcpClient client2(&loop, serverAddr2);
     client2.connect();
 
     // InetAddress serverAddr(8000, "192.168.2.102");

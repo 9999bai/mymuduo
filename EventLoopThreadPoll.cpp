@@ -1,5 +1,6 @@
 #include "EventLoopThreadPoll.h"
 #include "EventLoopThread.h"
+#include "EventLoop.h"
 
 EventLoopThreadPoll::EventLoopThreadPoll(EventLoop* baseLoop, const std::string &nameArg)
                     : baseLoop_(baseLoop)
@@ -18,6 +19,7 @@ EventLoopThreadPoll::~EventLoopThreadPoll()
 
 void EventLoopThreadPoll::start(const ThreadInitCallback& cb)
 {
+    baseLoop_->assertInLoopThread();
     started_ = true;
     for(int i=0; i<numThreads_; i++)
     {
@@ -38,6 +40,7 @@ void EventLoopThreadPoll::start(const ThreadInitCallback& cb)
 // 如果工作在多线程中，baseloop_默认以轮询的方式分配channel给subloop
 EventLoop* EventLoopThreadPoll::getNextLoop()
 {
+    baseLoop_->assertInLoopThread();
     EventLoop* loop = baseLoop_;
     if(!loops_.empty()) // 通过轮询获取下一个处理事件的loop
     {
@@ -52,6 +55,7 @@ EventLoop* EventLoopThreadPoll::getNextLoop()
 
 std::vector<EventLoop*> EventLoopThreadPoll::getAllLoops()
 {
+    baseLoop_->assertInLoopThread();
     if(loops_.empty())
     {
         return std::vector<EventLoop*> (1, baseLoop_);

@@ -4,6 +4,8 @@
 
 #include <sys/types.h>
 #include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
 #include "Logger.h"
 
 ssize_t Buffer::readFd(int fd, int* saveErrno)
@@ -74,7 +76,18 @@ ssize_t Buffer::writeFd(int fd, int* saveErrno)
 
 ssize_t Buffer::writeFd_udp(int fd, struct sockaddr *src_addr, socklen_t addrlen, int* saveErrno)
 {
+    // struct sockaddr_in send_addr;
+    // send_addr.sin_family = AF_INET;
+    // send_addr.sin_port = htons(8080);
+    // send_addr.sin_addr.s_addr = inet_addr("192.168.2.102");
+    // int addr_length = sizeof(send_addr);
+    // if( sendto(sock_fd, buff, cs_pkg.GetCachedSize(), 0, (struct sockaddr *)&send_addr, sizeof(send_addr)) < 0 )
     ssize_t n = ::sendto(fd, peek(), readableBytes(), 0, src_addr, addrlen);
+
+    // char buff[20] = "123456789";
+    // size_t bufflen = sizeof buff;
+
+    // ssize_t n = ::sendto(fd, buff, bufflen, 0, (struct sockaddr *)&send_addr, sizeof(send_addr));
     if(n < 0)
     {
         *saveErrno = errno;

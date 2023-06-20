@@ -9,8 +9,8 @@
 class Timer : noncopyable
 {
 public:   // 回调函数 时间戳 循环间隔 是否重复
-    Timer(TimerCallback cb, Timestamp when, double interval)
-        : callback_(std::move(cb))
+    Timer(const TimerCallback& cb, Timestamp when, double interval)
+        : callback_(cb)
         , expiration_(when)
         , interval_(interval)
         , repeat_(interval > 0.0)
@@ -32,5 +32,5 @@ private:
     const bool repeat_; //是否重复
     const int64_t sequence_;//序列号，即唯一ID
 
-    static std::atomic<std::int64_t> s_numCreated_;//原子计数
+    static std::atomic<u_int64_t> s_numCreated_;//原子计数
 };

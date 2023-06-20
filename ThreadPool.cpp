@@ -135,14 +135,17 @@ void ThreadPool::runInThread()
   // }
   catch (const std::exception& ex)
   {
-    fprintf(stderr, "exception caught in ThreadPool %s\n", name_.c_str());
-    fprintf(stderr, "reason: %s\n", ex.what());
-    abort();
+    LOG_ERROR("exception caught in ThreadPool %s", name_.c_str());
+    LOG_ERROR("reason %s", ex.what());
+    // fprintf(stderr, "exception caught in ThreadPool %s\n", name_.c_str());
+    // fprintf(stderr, "reason: %s\n", ex.what());
+    // abort();
   }
   catch (...)
   {
-    fprintf(stderr, "unknown exception caught in ThreadPool %s\n", name_.c_str());
-    throw; // rethrow
+    LOG_ERROR("unknown exception caught in ThreadPool %s", name_.c_str());
+    // fprintf(stderr, "unknown exception caught in ThreadPool %s\n", name_.c_str());
+    // throw; // rethrow
   }
 }
 

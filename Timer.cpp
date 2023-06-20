@@ -1,7 +1,7 @@
 #include "Timer.h"
 #include "Logger.h"
 
-std::atomic<std::int64_t> Timer::s_numCreated_(0);
+std::atomic<u_int64_t> Timer::s_numCreated_(0);
 
 void Timer::run() const 
 { 

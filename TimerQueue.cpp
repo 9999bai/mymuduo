@@ -2,6 +2,7 @@
 #include "Logger.h"
 #include "Timer.h"
 #include "TimerId.h"
+// #include "Channel.h"
 
 #include <sys/timerfd.h>
 #include <strings.h>
@@ -35,8 +36,8 @@ namespace detailTimer
     {
         struct itimerspec newValue;
         struct itimerspec oldValue;
-        bzero(&newValue, sizeof newValue);
-        bzero(&oldValue, sizeof oldValue);
+        bzero(&newValue, sizeof(newValue));
+        bzero(&oldValue, sizeof(oldValue));
 
         newValue.it_value = detailTimer::howMuchTimeFromNow(expiration);
         int ret = ::timerfd_settime(timerfd, 0, &newValue, &oldValue);
@@ -58,7 +59,7 @@ namespace detailTimer
 }
 
 TimerQueue::TimerQueue(EventLoop* loop)
-            : loop_(loop)
+            : loop_(mymuduo::CheckLoopNotNull(loop))
             , timerfd_(detailTimer::createTimerfd())
             , timerfdChannel_(loop, timerfd_)
             , timers_()
@@ -76,7 +77,7 @@ TimerQueue::~TimerQueue()
     ::close(timerfd_);
     for(const Entry& timer : timers_)
     {
-        delete timer.second;
+        // delete timer.second;
     }
 }
 
@@ -110,7 +111,7 @@ void TimerQueue::canceInLoop(TimerId timerId)
     if(it != activeTimers_.end())
     {
         size_t n = timers_.erase(Entry(it->first->expiration(), it->first));
-        delete it->first;
+        // delete it->first;
         activeTimers_.erase(it);
     }
     else if(callingExpiredTimers_)
@@ -168,7 +169,7 @@ void TimerQueue::reset(const std::vector<Entry>& expired, Timestamp now)
         }
         else
         {
-            delete it.second;
+            // delete it.second;
         }
     }
     if(!timers_.empty())
@@ -192,12 +193,10 @@ bool TimerQueue::insert(Timer* timer)
         earliestChanged = true;
     }
     {
-        std::pair<TimerList::iterator, bool> result\
-        = timers_.insert(Entry(when, timer));
+        std::pair<TimerList::iterator, bool> result = timers_.insert(Entry(when, timer));
     }
     {
-        std::pair<ActiveTimerSet::iterator, bool> result\
-        = activeTimers_.insert(ActiveTimer(timer, timer->sequence()));
+        std::pair<ActiveTimerSet::iterator, bool> result = activeTimers_.insert(ActiveTimer(timer, timer->sequence()));
     }
     return earliestChanged;
 }

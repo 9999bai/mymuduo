@@ -5,7 +5,7 @@
 
 std::atomic_int Thread::numCreated_ = {0};
 
-Thread::Thread(ThreadFunc func, std::string name = "")
+Thread::Thread(const ThreadFunc& func, const std::string& name = "")
     : started_(false)
     , joined_(false)
     , tid_(0)
@@ -33,7 +33,10 @@ void Thread::start()
         tid_ = CurrentThread::tid();
         sem_post(&sem);
         //  开启一个线程，专门执行该线程函数
-        func_();
+        if(func_)
+        {
+            func_();
+        }
     }));
     
     //这里必须等待获取上面新创建的线程的tid值

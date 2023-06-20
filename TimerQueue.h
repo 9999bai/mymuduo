@@ -3,7 +3,7 @@
 #include "noncopyable.h"
 #include "EventLoop.h"
 #include "Timestamp.h"
-// #include "Timer.h"
+#include "Helper.h"
 #include "Callbacks.h"
 #include "Channel.h"
 
@@ -12,6 +12,7 @@
 
 class Timer;
 class TimerId;
+// class Channel;
 
 class TimerQueue : noncopyable
 {

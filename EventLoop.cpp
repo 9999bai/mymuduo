@@ -12,15 +12,15 @@
 
 
 // 防止一个线程创建多个EventLoop
-__thread EventLoop* t_loopInThisThread = nullptr;
+__thread EventLoop* t_loopInThisThread = 0;
 
 //定义默认的Poller IO复用接口的超时时间
-const int kPollerTimeMs = 50000;
+const int kPollerTimeMs = 10000;
 
 // 创建wakeupfd用来notify唤醒subReactor处理新来的channel
 int createEventfd()
 {
-    int evtfd = eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC);
+    int evtfd = ::eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC);
     if(evtfd < 0)
     {
         LOG_FATAL("eventfd error:%d\n", errno);
@@ -31,8 +31,9 @@ int createEventfd()
 EventLoop::EventLoop()
             : looping_(false)
             , quit_(false)
-            // , eventHandling_(false)
+            , eventHandling_(false)
             , callingPendingFunctors_(false)
+            , iteration_(0)
             , threadId_(CurrentThread::tid())
             , poller_(Poller::newDefaultPoller(this))
             , timerQueue_(new TimerQueue(this))
@@ -54,19 +55,21 @@ EventLoop::EventLoop()
     // 每一个eventloop都监听wakeupChannel的EPOLLIN的读事件了
     LOG_INFO("wakeupChannel enableReading....");
     wakeupChannel_->enableReading();
+    LOG_INFO("wakeupChannel enableReaded....");
 }
 
 EventLoop::~EventLoop()
 {
     wakeupChannel_->disableAll();
     wakeupChannel_->remove();
-    close(wakeupFd_);
+    ::close(wakeupFd_);
     t_loopInThisThread = nullptr;
 }
 
 // 开启事件循环
 void EventLoop::loop()
 {
+    assertInLoopThread();
     looping_ = true;
     quit_ = false;
     LOG_INFO("EventLoop %p start looping \n", this);
@@ -76,12 +79,14 @@ void EventLoop::loop()
         activeChannels_.clear();
         pollReturnTime_ = poller_->poll(kPollerTimeMs, &activeChannels_);
         // LOG_INFO("poll -- activeChannels_.size=%d", activeChannels_.size());
-
-        for(Channel* channel : activeChannels_)
+        ++iteration_;
+        eventHandling_ = true;
+        for (Channel *channel : activeChannels_)
         {
             //Poller监听哪些channel发生事件了，然后上报EventLoop,通知channel处理相应的事件
             channel->handleEvent(pollReturnTime_);
         }
+        eventHandling_ = false;
         // 执行当前EventLoop事件循环需要处理的回调操作
         doPendingFunctors();
     }
@@ -118,7 +123,7 @@ void EventLoop::queueInLoop(Functor cb)
 {
     {
         std::unique_lock<std::mutex> lock(mutex_);
-        pendingFunctors_.emplace_back(cb);
+        pendingFunctors_.push_back(cb);
     }
     // 唤醒相应的，需要执行上面回调操作的loop的线程了
     if(!isInLoopThread() || callingPendingFunctors_)
@@ -127,21 +132,21 @@ void EventLoop::queueInLoop(Functor cb)
     }
 }
 
-TimerId EventLoop::runAt(Timestamp time, TimerCallback cb)
+TimerId EventLoop::runAt(const Timestamp& time, const TimerCallback& cb)
 {
-    return timerQueue_->addTimer(std::move(cb), time, 0.0);
+    return timerQueue_->addTimer(cb, time, 0.0);
 }
 
-TimerId EventLoop::runAfter(double delay, TimerCallback cb)
+TimerId EventLoop::runAfter(double delay, const TimerCallback& cb)
 {
     Timestamp time(addTime(Timestamp::now(), delay));
-    return runAt(time, std::move(cb));
+    return runAt(time, cb);
 }
 
-TimerId EventLoop::runEvery(double interval, TimerCallback cb)
+TimerId EventLoop::runEvery(double interval, const TimerCallback& cb)
 {
     Timestamp time(addTime(Timestamp::now(), interval));
-    return timerQueue_->addTimer(std::move(cb), time, interval);
+    return timerQueue_->addTimer(cb, time, interval);
 }
 
 void EventLoop::cancel(TimerId timerId)
@@ -152,7 +157,7 @@ void EventLoop::cancel(TimerId timerId)
 void EventLoop::handleRead()
 {
     uint64_t one = 1;
-    ssize_t n = read(wakeupFd_, &one, sizeof one);
+    ssize_t n = ::read(wakeupFd_, &one, sizeof one);
     if(n != sizeof one)
     {
         LOG_ERROR("EventLoop::handleRead() reads %lu bytes instead of 8", n);
@@ -163,7 +168,7 @@ void EventLoop::handleRead()
 void EventLoop::wakeup()
 {
     uint64_t one = 1;
-    ssize_t n = write(wakeupFd_, &one, sizeof one);
+    ssize_t n = ::write(wakeupFd_, &one, sizeof one);
     if(n != sizeof one)
     {
         LOG_ERROR("EventLoop::wakeup write %lu bytes instead of 8 \n", n);
@@ -173,16 +178,19 @@ void EventLoop::wakeup()
 // EventLoop的方法--> Poller的方法
 void EventLoop::updateChannel(Channel* channel)
 {
+    assertInLoopThread();
     poller_->updateChannel(channel);
 }
 
 void EventLoop::removeChannel(Channel* channel)
 {
+    assertInLoopThread();
     poller_->removeChannel(channel);
 }
 
 bool EventLoop::hasChannel(Channel* channel)
 {
+    assertInLoopThread();
     return poller_->hasChannel(channel);
 }
 

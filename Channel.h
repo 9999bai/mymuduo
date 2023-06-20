@@ -34,13 +34,13 @@ public:
     void tie(const std::shared_ptr<void>&);
     int fd() const { return fd_; }
     int events() const { return events_; }
-    void set_revents(int recv) { revents_ = recv; }
+    void set_revents(int revt) { revents_ = revt; }
 
     void enableReading() { events_ |= kReadEvent; update(); }
     void disableReading() { events_ &= ~kReadEvent; update(); }
     void enableWriting() { events_ |= kWriteEvent; update(); }
     void disableWriting() { events_ &= ~kWriteEvent; update(); }
-    void disableAll() { events_ & kNoneEvent; update(); }
+    void disableAll() { events_ = kNoneEvent; update(); }
 
     //返回fd当前的事件状态
     bool isNoneEvent() const { return events_ == kNoneEvent; }

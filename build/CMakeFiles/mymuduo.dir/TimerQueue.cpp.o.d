@@ -177,6 +177,23 @@ CMakeFiles/mymuduo.dir/TimerQueue.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/ctime \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/system_error \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/arm-none-linux-gnueabi/bits/error_constants.h \
+ /home/brian/muduo_lib/Helper.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/termios.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/termios.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/arpa/inet.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/netinet/in.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/socket.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/uio.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/uio.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/socket.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/socket_type.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/sockaddr.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/asm/socket.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/asm-generic/socket.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/asm/sockios.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/asm-generic/sockios.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/in.h \
  /home/brian/muduo_lib/Channel.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/set \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/include/c++/4.8.3/bits/stl_tree.h \

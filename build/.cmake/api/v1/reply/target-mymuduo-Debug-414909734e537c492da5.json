@@ -87,7 +87,11 @@
 				23,
 				24,
 				25,
-				26
+				26,
+				27,
+				28,
+				29,
+				30
 			]
 		}
 	],
@@ -142,12 +146,28 @@
 				23,
 				24,
 				25,
-				26
+				26,
+				27,
+				28,
+				29,
+				30
 			]
 		}
 	],
 	"sources" : 
 	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "AbstractConnection.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "AbstractConnector.cpp",
+			"sourceGroupIndex" : 0
+		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
@@ -170,12 +190,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Condition.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Connector.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -235,13 +249,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SerialConnector.cpp",
+			"path" : "SerialPort.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "SerialPort.cpp",
+			"path" : "SerialPortConnection.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "SerialPortConnector.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -254,6 +274,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "TcpClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "TcpClientConnector.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -302,6 +328,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "UdpClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "UdpConnection.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

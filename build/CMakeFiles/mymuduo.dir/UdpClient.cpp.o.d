@@ -196,4 +196,7 @@ CMakeFiles/mymuduo.dir/UdpClient.cpp.o: \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/termios.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/sys/ttydefaults.h \
  /home/brian/muduo_lib/Channel.h /home/brian/muduo_lib/Socket.h \
- /home/brian/muduo_lib/TcpConnection.h /home/brian/muduo_lib/Buffer.h
+ /home/brian/muduo_lib/AbstractConnector.h \
+ /home/brian/muduo_lib/UdpConnection.h \
+ /home/brian/muduo_lib/AbstractConnection.h \
+ /home/brian/muduo_lib/Buffer.h

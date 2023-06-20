@@ -2,15 +2,15 @@
 
 namespace detail2
 {
-    void removeConnection(EventLoop* loop, const TcpConnectionPtr& conn)
+    void removeConnection(EventLoop* loop, const ConnectionPtr& conn)
     {
-        loop->queueInLoop(std::bind(&TcpConnection::connectDestroyed, conn));
+        loop->queueInLoop(std::bind(&AbstractConnection::connectDestroyed, conn));
     }
 }
 
-TcpClient::TcpClient(EventLoop* loop, const InetAddress& serverAddr, const std::string& name)
-            : loop_(loop)
-            , connector_(new Connector(loop, serverAddr))
+TcpClient::TcpClient(EventLoop* loop,  const std::string& name, const InetAddress& serverAddr)
+            : loop_(mymuduo::CheckLoopNotNull(loop))
+            , connector_(new TcpClientConnector(loop, serverAddr))
             , name_(name)
             , retry_(false)
             , connect_(true)
@@ -21,7 +21,7 @@ TcpClient::TcpClient(EventLoop* loop, const InetAddress& serverAddr, const std::
 
 TcpClient::~TcpClient()
 {
-    TcpConnectionPtr conn;
+    ConnectionPtr conn;
     bool unique = false;
     {
         std::unique_lock<std::mutex> lock(mutex_);
@@ -31,7 +31,9 @@ TcpClient::~TcpClient()
     if(conn)
     {
         CloseCallback cb = std::bind(&detail2::removeConnection, loop_, std::placeholders::_1);
-        if(unique)
+        loop_->runInLoop(std::bind(&TcpConnection::setCloseCallback, conn, cb));
+
+        if (unique)
         {
             // conn->forceClose();
         }
@@ -39,7 +41,7 @@ TcpClient::~TcpClient()
     else
     {
         connector_->stop();
-        // loop_->runAfter(1, std::bind(&detail::removeConnector, connector_));
+        // loop_->runAfter(1, std::bind(&detai2::removeConnector, connector_));
     }
 }
 
@@ -62,13 +64,19 @@ void TcpClient::disconnect()
     }
 }
 
+void TcpClient::restart()
+{
+    connect_ = true;
+    connector_->restart();
+}
+
 void TcpClient::stop()
 {
     connect_ = false;
     connector_->stop();
 }
 
-TcpConnectionPtr TcpClient::connection()
+ConnectionPtr TcpClient::connection() const
 {
     std::unique_lock<std::mutex> lock(mutex_);
     return connection_;
@@ -83,10 +91,9 @@ void TcpClient::newConnection(int sockfd)
     ++nextConnId_;
     std::string connName = name_ + buf;
 
-    sockaddr_in addr = sockets::getLocalAddr(sockfd);
-    InetAddress localAddr(addr);
-    // InetAddress localAddr(sockets::getLocalAddr(sockfd));
-    TcpConnectionPtr conn(new TcpConnection(loop_, connName, sockfd, localAddr, peerAddr));
+    InetAddress localAddr(sockets::getLocalAddr(sockfd));
+    
+    ConnectionPtr conn = std::make_shared<TcpConnection>(loop_, connName, sockfd, peerAddr);
     conn->setConnectionCallback(connectionCallback_);
     conn->setMessageCallback(messageCallback_);
     conn->setWriteCompleteCallback(writeCompleteCallback_);
@@ -98,14 +105,19 @@ void TcpClient::newConnection(int sockfd)
     conn->connectEstablished();
 }
 
-void TcpClient::removeConnection(const TcpConnectionPtr& conn)
+void TcpClient::removeConnection(const ConnectionPtr& conn)
 {
+    if(closeCallback_)
+    {
+        closeCallback_(conn);
+    }
+    
     loop_->assertInLoopThread();
     {
         std::unique_lock<std::mutex> lock(mutex_);
         connection_.reset();
     }
-    loop_->queueInLoop(std::bind(&TcpConnection::connectDestroyed, conn));
+    loop_->queueInLoop(std::bind(&AbstractConnection::connectDestroyed, conn));
     if(retry_ && connect_)
     {
         LOG_INFO("TcpClient::connect %s Reconnect to %s\n", name_.c_str(), connector_->serverAddress().toIpPort().c_str());

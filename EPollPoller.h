@@ -24,7 +24,7 @@ private:
     // 更新channel通道
     void update(int operation, Channel* channel);
 
-    using EventList = std::vector<epoll_event>;
+    using EventList = std::vector<struct epoll_event>;
     
     EventList events_;
     int epollfd_;

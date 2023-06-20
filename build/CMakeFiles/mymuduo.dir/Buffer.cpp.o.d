@@ -129,4 +129,7 @@ CMakeFiles/mymuduo.dir/Buffer.cpp.o: /home/brian/muduo_lib/Buffer.cpp \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/environments.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/confname.h \
  /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/getopt.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/netinet/in.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/bits/in.h \
+ /usr/local/HTZX-arm-4.8.3/arm-none-linux-gnueabi/libc/usr/include/arpa/inet.h \
  /home/brian/muduo_lib/Logger.h /home/brian/muduo_lib/noncopyable.h

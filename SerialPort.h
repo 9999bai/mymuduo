@@ -2,7 +2,6 @@
 
 #include "noncopyable.h"
 #include "TcpConnection.h"
-#include "SerialConnector.h"
 #include "Buffer.h"
 #include "Logger.h"
 #include "EventLoop.h"
@@ -12,11 +11,10 @@
 
 #include <mutex>
 
-class SerialPort : noncopyable
+
+class SerialPort
 {
 public:
-    // using SerialPortConnectionPtr = TcpConnectionPtr;
-
     SerialPort(EventLoop* loop, const mymuduo::struct_serial& serialConfig);
     ~SerialPort();
 
@@ -24,7 +22,7 @@ public:
     void disconnect();
     void stop();
 
-    TcpConnectionPtr connection();
+    ConnectionPtr connection();
 
     EventLoop* getLoop() const { return loop_; }
     bool retry() const { return retry_; }
@@ -39,10 +37,10 @@ public:
     
 private:
     void newConnection(int sockfd);
-    void removeConnection(const TcpConnectionPtr& conn);
+    void removeConnection(const ConnectionPtr& conn);
 
     EventLoop* loop_;
-    SerialConnectorPtr connector_;
+    ConnectorPtr connector_;
     const std::string serialName_;
 
     ConnectionCallback connectionCallback_;
@@ -57,6 +55,6 @@ private:
     int nextConnectId_;
     std::mutex mutex_;
     
-    TcpConnectionPtr connection_; 
+    ConnectionPtr connection_; 
 };
 

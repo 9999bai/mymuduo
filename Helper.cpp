@@ -3,6 +3,7 @@
 
 #include <unistd.h>
 #include <strings.h>
+#include "EventLoop.h"
 
 // namespace sockets
 // {
@@ -86,4 +87,13 @@ bool sockets::isSelfConnect(int sockfd)
     return false;
 }
 // }
+
+EventLoop* mymuduo::CheckLoopNotNull(EventLoop* loop)
+{
+    if(loop == nullptr)
+    {
+        LOG_FATAL("%s:%s:%d CheckLoopNotNull loop is null\n", __FILE__, __FUNCTION__, __LINE__);
+    }
+    return loop;
+}
 

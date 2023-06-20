@@ -12,7 +12,7 @@
 
 Socket::~Socket()
 {
-    close(sockfd_);
+    ::close(sockfd_);
 }
 
 bool Socket::bindAddress(const InetAddress& localaddr)

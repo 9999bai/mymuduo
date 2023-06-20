@@ -13,7 +13,7 @@ class Thread : noncopyable
 public:
     using ThreadFunc = std::function<void()>;
     
-    explicit Thread(ThreadFunc func, std::string name);
+    explicit Thread(const ThreadFunc& func, const std::string& name);
     ~Thread();
     
     void start();

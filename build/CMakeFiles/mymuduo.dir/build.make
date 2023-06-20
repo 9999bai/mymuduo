@@ -69,10 +69,38 @@ include CMakeFiles/mymuduo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mymuduo.dir/flags.make
 
+CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o: /home/brian/muduo_lib/AbstractConnection.cpp
+CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o -MF CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o.d -o CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o -c /home/brian/muduo_lib/AbstractConnection.cpp
+
+CMakeFiles/mymuduo.dir/AbstractConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/AbstractConnection.cpp.i"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/AbstractConnection.cpp > CMakeFiles/mymuduo.dir/AbstractConnection.cpp.i
+
+CMakeFiles/mymuduo.dir/AbstractConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/AbstractConnection.cpp.s"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/AbstractConnection.cpp -o CMakeFiles/mymuduo.dir/AbstractConnection.cpp.s
+
+CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o: /home/brian/muduo_lib/AbstractConnector.cpp
+CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o -MF CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o.d -o CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o -c /home/brian/muduo_lib/AbstractConnector.cpp
+
+CMakeFiles/mymuduo.dir/AbstractConnector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/AbstractConnector.cpp.i"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/AbstractConnector.cpp > CMakeFiles/mymuduo.dir/AbstractConnector.cpp.i
+
+CMakeFiles/mymuduo.dir/AbstractConnector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/AbstractConnector.cpp.s"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/AbstractConnector.cpp -o CMakeFiles/mymuduo.dir/AbstractConnector.cpp.s
+
 CMakeFiles/mymuduo.dir/Acceptor.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Acceptor.cpp.o: /home/brian/muduo_lib/Acceptor.cpp
 CMakeFiles/mymuduo.dir/Acceptor.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mymuduo.dir/Acceptor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mymuduo.dir/Acceptor.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Acceptor.cpp.o -MF CMakeFiles/mymuduo.dir/Acceptor.cpp.o.d -o CMakeFiles/mymuduo.dir/Acceptor.cpp.o -c /home/brian/muduo_lib/Acceptor.cpp
 
 CMakeFiles/mymuduo.dir/Acceptor.cpp.i: cmake_force
@@ -86,7 +114,7 @@ CMakeFiles/mymuduo.dir/Acceptor.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Buffer.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Buffer.cpp.o: /home/brian/muduo_lib/Buffer.cpp
 CMakeFiles/mymuduo.dir/Buffer.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mymuduo.dir/Buffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mymuduo.dir/Buffer.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Buffer.cpp.o -MF CMakeFiles/mymuduo.dir/Buffer.cpp.o.d -o CMakeFiles/mymuduo.dir/Buffer.cpp.o -c /home/brian/muduo_lib/Buffer.cpp
 
 CMakeFiles/mymuduo.dir/Buffer.cpp.i: cmake_force
@@ -100,7 +128,7 @@ CMakeFiles/mymuduo.dir/Buffer.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Channel.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Channel.cpp.o: /home/brian/muduo_lib/Channel.cpp
 CMakeFiles/mymuduo.dir/Channel.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mymuduo.dir/Channel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mymuduo.dir/Channel.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Channel.cpp.o -MF CMakeFiles/mymuduo.dir/Channel.cpp.o.d -o CMakeFiles/mymuduo.dir/Channel.cpp.o -c /home/brian/muduo_lib/Channel.cpp
 
 CMakeFiles/mymuduo.dir/Channel.cpp.i: cmake_force
@@ -114,7 +142,7 @@ CMakeFiles/mymuduo.dir/Channel.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Condition.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Condition.cpp.o: /home/brian/muduo_lib/Condition.cpp
 CMakeFiles/mymuduo.dir/Condition.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mymuduo.dir/Condition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mymuduo.dir/Condition.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Condition.cpp.o -MF CMakeFiles/mymuduo.dir/Condition.cpp.o.d -o CMakeFiles/mymuduo.dir/Condition.cpp.o -c /home/brian/muduo_lib/Condition.cpp
 
 CMakeFiles/mymuduo.dir/Condition.cpp.i: cmake_force
@@ -125,24 +153,10 @@ CMakeFiles/mymuduo.dir/Condition.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/Condition.cpp.s"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/Condition.cpp -o CMakeFiles/mymuduo.dir/Condition.cpp.s
 
-CMakeFiles/mymuduo.dir/Connector.cpp.o: CMakeFiles/mymuduo.dir/flags.make
-CMakeFiles/mymuduo.dir/Connector.cpp.o: /home/brian/muduo_lib/Connector.cpp
-CMakeFiles/mymuduo.dir/Connector.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mymuduo.dir/Connector.cpp.o"
-	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Connector.cpp.o -MF CMakeFiles/mymuduo.dir/Connector.cpp.o.d -o CMakeFiles/mymuduo.dir/Connector.cpp.o -c /home/brian/muduo_lib/Connector.cpp
-
-CMakeFiles/mymuduo.dir/Connector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/Connector.cpp.i"
-	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/Connector.cpp > CMakeFiles/mymuduo.dir/Connector.cpp.i
-
-CMakeFiles/mymuduo.dir/Connector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/Connector.cpp.s"
-	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/Connector.cpp -o CMakeFiles/mymuduo.dir/Connector.cpp.s
-
 CMakeFiles/mymuduo.dir/CurrentThread.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/CurrentThread.cpp.o: /home/brian/muduo_lib/CurrentThread.cpp
 CMakeFiles/mymuduo.dir/CurrentThread.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mymuduo.dir/CurrentThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mymuduo.dir/CurrentThread.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/CurrentThread.cpp.o -MF CMakeFiles/mymuduo.dir/CurrentThread.cpp.o.d -o CMakeFiles/mymuduo.dir/CurrentThread.cpp.o -c /home/brian/muduo_lib/CurrentThread.cpp
 
 CMakeFiles/mymuduo.dir/CurrentThread.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/mymuduo.dir/CurrentThread.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/EPollPoller.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/EPollPoller.cpp.o: /home/brian/muduo_lib/EPollPoller.cpp
 CMakeFiles/mymuduo.dir/EPollPoller.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mymuduo.dir/EPollPoller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mymuduo.dir/EPollPoller.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/EPollPoller.cpp.o -MF CMakeFiles/mymuduo.dir/EPollPoller.cpp.o.d -o CMakeFiles/mymuduo.dir/EPollPoller.cpp.o -c /home/brian/muduo_lib/EPollPoller.cpp
 
 CMakeFiles/mymuduo.dir/EPollPoller.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/mymuduo.dir/EPollPoller.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/EventLoop.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/EventLoop.cpp.o: /home/brian/muduo_lib/EventLoop.cpp
 CMakeFiles/mymuduo.dir/EventLoop.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mymuduo.dir/EventLoop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mymuduo.dir/EventLoop.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/EventLoop.cpp.o -MF CMakeFiles/mymuduo.dir/EventLoop.cpp.o.d -o CMakeFiles/mymuduo.dir/EventLoop.cpp.o -c /home/brian/muduo_lib/EventLoop.cpp
 
 CMakeFiles/mymuduo.dir/EventLoop.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/mymuduo.dir/EventLoop.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o: /home/brian/muduo_lib/EventLoopThread.cpp
 CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o -MF CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o.d -o CMakeFiles/mymuduo.dir/EventLoopThread.cpp.o -c /home/brian/muduo_lib/EventLoopThread.cpp
 
 CMakeFiles/mymuduo.dir/EventLoopThread.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/mymuduo.dir/EventLoopThread.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o: /home/brian/muduo_lib/EventLoopThreadPoll.cpp
 CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o -MF CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o.d -o CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.o -c /home/brian/muduo_lib/EventLoopThreadPoll.cpp
 
 CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/mymuduo.dir/EventLoopThreadPoll.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Helper.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Helper.cpp.o: /home/brian/muduo_lib/Helper.cpp
 CMakeFiles/mymuduo.dir/Helper.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mymuduo.dir/Helper.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mymuduo.dir/Helper.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Helper.cpp.o -MF CMakeFiles/mymuduo.dir/Helper.cpp.o.d -o CMakeFiles/mymuduo.dir/Helper.cpp.o -c /home/brian/muduo_lib/Helper.cpp
 
 CMakeFiles/mymuduo.dir/Helper.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/mymuduo.dir/Helper.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/InetAddress.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/InetAddress.cpp.o: /home/brian/muduo_lib/InetAddress.cpp
 CMakeFiles/mymuduo.dir/InetAddress.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mymuduo.dir/InetAddress.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mymuduo.dir/InetAddress.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/InetAddress.cpp.o -MF CMakeFiles/mymuduo.dir/InetAddress.cpp.o.d -o CMakeFiles/mymuduo.dir/InetAddress.cpp.o -c /home/brian/muduo_lib/InetAddress.cpp
 
 CMakeFiles/mymuduo.dir/InetAddress.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/mymuduo.dir/InetAddress.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Logger.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Logger.cpp.o: /home/brian/muduo_lib/Logger.cpp
 CMakeFiles/mymuduo.dir/Logger.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mymuduo.dir/Logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mymuduo.dir/Logger.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Logger.cpp.o -MF CMakeFiles/mymuduo.dir/Logger.cpp.o.d -o CMakeFiles/mymuduo.dir/Logger.cpp.o -c /home/brian/muduo_lib/Logger.cpp
 
 CMakeFiles/mymuduo.dir/Logger.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/mymuduo.dir/Logger.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Poller.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Poller.cpp.o: /home/brian/muduo_lib/Poller.cpp
 CMakeFiles/mymuduo.dir/Poller.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mymuduo.dir/Poller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mymuduo.dir/Poller.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Poller.cpp.o -MF CMakeFiles/mymuduo.dir/Poller.cpp.o.d -o CMakeFiles/mymuduo.dir/Poller.cpp.o -c /home/brian/muduo_lib/Poller.cpp
 
 CMakeFiles/mymuduo.dir/Poller.cpp.i: cmake_force
@@ -264,20 +278,6 @@ CMakeFiles/mymuduo.dir/Poller.cpp.i: cmake_force
 CMakeFiles/mymuduo.dir/Poller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/Poller.cpp.s"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/Poller.cpp -o CMakeFiles/mymuduo.dir/Poller.cpp.s
-
-CMakeFiles/mymuduo.dir/SerialConnector.cpp.o: CMakeFiles/mymuduo.dir/flags.make
-CMakeFiles/mymuduo.dir/SerialConnector.cpp.o: /home/brian/muduo_lib/SerialConnector.cpp
-CMakeFiles/mymuduo.dir/SerialConnector.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mymuduo.dir/SerialConnector.cpp.o"
-	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/SerialConnector.cpp.o -MF CMakeFiles/mymuduo.dir/SerialConnector.cpp.o.d -o CMakeFiles/mymuduo.dir/SerialConnector.cpp.o -c /home/brian/muduo_lib/SerialConnector.cpp
-
-CMakeFiles/mymuduo.dir/SerialConnector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/SerialConnector.cpp.i"
-	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/SerialConnector.cpp > CMakeFiles/mymuduo.dir/SerialConnector.cpp.i
-
-CMakeFiles/mymuduo.dir/SerialConnector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/SerialConnector.cpp.s"
-	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/SerialConnector.cpp -o CMakeFiles/mymuduo.dir/SerialConnector.cpp.s
 
 CMakeFiles/mymuduo.dir/SerialPort.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/SerialPort.cpp.o: /home/brian/muduo_lib/SerialPort.cpp
@@ -293,10 +293,38 @@ CMakeFiles/mymuduo.dir/SerialPort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/SerialPort.cpp.s"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/SerialPort.cpp -o CMakeFiles/mymuduo.dir/SerialPort.cpp.s
 
+CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o: /home/brian/muduo_lib/SerialPortConnection.cpp
+CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o -MF CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o.d -o CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o -c /home/brian/muduo_lib/SerialPortConnection.cpp
+
+CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.i"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/SerialPortConnection.cpp > CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.i
+
+CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.s"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/SerialPortConnection.cpp -o CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.s
+
+CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o: /home/brian/muduo_lib/SerialPortConnector.cpp
+CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o -MF CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o.d -o CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o -c /home/brian/muduo_lib/SerialPortConnector.cpp
+
+CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.i"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/SerialPortConnector.cpp > CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.i
+
+CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.s"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/SerialPortConnector.cpp -o CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.s
+
 CMakeFiles/mymuduo.dir/Socket.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Socket.cpp.o: /home/brian/muduo_lib/Socket.cpp
 CMakeFiles/mymuduo.dir/Socket.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mymuduo.dir/Socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mymuduo.dir/Socket.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Socket.cpp.o -MF CMakeFiles/mymuduo.dir/Socket.cpp.o.d -o CMakeFiles/mymuduo.dir/Socket.cpp.o -c /home/brian/muduo_lib/Socket.cpp
 
 CMakeFiles/mymuduo.dir/Socket.cpp.i: cmake_force
@@ -310,7 +338,7 @@ CMakeFiles/mymuduo.dir/Socket.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/TcpClient.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/TcpClient.cpp.o: /home/brian/muduo_lib/TcpClient.cpp
 CMakeFiles/mymuduo.dir/TcpClient.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mymuduo.dir/TcpClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mymuduo.dir/TcpClient.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/TcpClient.cpp.o -MF CMakeFiles/mymuduo.dir/TcpClient.cpp.o.d -o CMakeFiles/mymuduo.dir/TcpClient.cpp.o -c /home/brian/muduo_lib/TcpClient.cpp
 
 CMakeFiles/mymuduo.dir/TcpClient.cpp.i: cmake_force
@@ -321,10 +349,24 @@ CMakeFiles/mymuduo.dir/TcpClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/TcpClient.cpp.s"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/TcpClient.cpp -o CMakeFiles/mymuduo.dir/TcpClient.cpp.s
 
+CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o: /home/brian/muduo_lib/TcpClientConnector.cpp
+CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o -MF CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o.d -o CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o -c /home/brian/muduo_lib/TcpClientConnector.cpp
+
+CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.i"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/TcpClientConnector.cpp > CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.i
+
+CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.s"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/TcpClientConnector.cpp -o CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.s
+
 CMakeFiles/mymuduo.dir/TcpConnection.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/TcpConnection.cpp.o: /home/brian/muduo_lib/TcpConnection.cpp
 CMakeFiles/mymuduo.dir/TcpConnection.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mymuduo.dir/TcpConnection.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mymuduo.dir/TcpConnection.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/TcpConnection.cpp.o -MF CMakeFiles/mymuduo.dir/TcpConnection.cpp.o.d -o CMakeFiles/mymuduo.dir/TcpConnection.cpp.o -c /home/brian/muduo_lib/TcpConnection.cpp
 
 CMakeFiles/mymuduo.dir/TcpConnection.cpp.i: cmake_force
@@ -338,7 +380,7 @@ CMakeFiles/mymuduo.dir/TcpConnection.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/TcpServer.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/TcpServer.cpp.o: /home/brian/muduo_lib/TcpServer.cpp
 CMakeFiles/mymuduo.dir/TcpServer.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mymuduo.dir/TcpServer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mymuduo.dir/TcpServer.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/TcpServer.cpp.o -MF CMakeFiles/mymuduo.dir/TcpServer.cpp.o.d -o CMakeFiles/mymuduo.dir/TcpServer.cpp.o -c /home/brian/muduo_lib/TcpServer.cpp
 
 CMakeFiles/mymuduo.dir/TcpServer.cpp.i: cmake_force
@@ -352,7 +394,7 @@ CMakeFiles/mymuduo.dir/TcpServer.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Thread.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Thread.cpp.o: /home/brian/muduo_lib/Thread.cpp
 CMakeFiles/mymuduo.dir/Thread.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mymuduo.dir/Thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mymuduo.dir/Thread.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Thread.cpp.o -MF CMakeFiles/mymuduo.dir/Thread.cpp.o.d -o CMakeFiles/mymuduo.dir/Thread.cpp.o -c /home/brian/muduo_lib/Thread.cpp
 
 CMakeFiles/mymuduo.dir/Thread.cpp.i: cmake_force
@@ -366,7 +408,7 @@ CMakeFiles/mymuduo.dir/Thread.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/ThreadPool.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/ThreadPool.cpp.o: /home/brian/muduo_lib/ThreadPool.cpp
 CMakeFiles/mymuduo.dir/ThreadPool.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mymuduo.dir/ThreadPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mymuduo.dir/ThreadPool.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/ThreadPool.cpp.o -MF CMakeFiles/mymuduo.dir/ThreadPool.cpp.o.d -o CMakeFiles/mymuduo.dir/ThreadPool.cpp.o -c /home/brian/muduo_lib/ThreadPool.cpp
 
 CMakeFiles/mymuduo.dir/ThreadPool.cpp.i: cmake_force
@@ -380,7 +422,7 @@ CMakeFiles/mymuduo.dir/ThreadPool.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Timer.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Timer.cpp.o: /home/brian/muduo_lib/Timer.cpp
 CMakeFiles/mymuduo.dir/Timer.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mymuduo.dir/Timer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mymuduo.dir/Timer.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Timer.cpp.o -MF CMakeFiles/mymuduo.dir/Timer.cpp.o.d -o CMakeFiles/mymuduo.dir/Timer.cpp.o -c /home/brian/muduo_lib/Timer.cpp
 
 CMakeFiles/mymuduo.dir/Timer.cpp.i: cmake_force
@@ -394,7 +436,7 @@ CMakeFiles/mymuduo.dir/Timer.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/TimerQueue.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/TimerQueue.cpp.o: /home/brian/muduo_lib/TimerQueue.cpp
 CMakeFiles/mymuduo.dir/TimerQueue.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mymuduo.dir/TimerQueue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mymuduo.dir/TimerQueue.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/TimerQueue.cpp.o -MF CMakeFiles/mymuduo.dir/TimerQueue.cpp.o.d -o CMakeFiles/mymuduo.dir/TimerQueue.cpp.o -c /home/brian/muduo_lib/TimerQueue.cpp
 
 CMakeFiles/mymuduo.dir/TimerQueue.cpp.i: cmake_force
@@ -408,7 +450,7 @@ CMakeFiles/mymuduo.dir/TimerQueue.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/Timestamp.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/Timestamp.cpp.o: /home/brian/muduo_lib/Timestamp.cpp
 CMakeFiles/mymuduo.dir/Timestamp.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mymuduo.dir/Timestamp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/mymuduo.dir/Timestamp.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/Timestamp.cpp.o -MF CMakeFiles/mymuduo.dir/Timestamp.cpp.o.d -o CMakeFiles/mymuduo.dir/Timestamp.cpp.o -c /home/brian/muduo_lib/Timestamp.cpp
 
 CMakeFiles/mymuduo.dir/Timestamp.cpp.i: cmake_force
@@ -422,7 +464,7 @@ CMakeFiles/mymuduo.dir/Timestamp.cpp.s: cmake_force
 CMakeFiles/mymuduo.dir/UdpClient.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/UdpClient.cpp.o: /home/brian/muduo_lib/UdpClient.cpp
 CMakeFiles/mymuduo.dir/UdpClient.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mymuduo.dir/UdpClient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/mymuduo.dir/UdpClient.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/UdpClient.cpp.o -MF CMakeFiles/mymuduo.dir/UdpClient.cpp.o.d -o CMakeFiles/mymuduo.dir/UdpClient.cpp.o -c /home/brian/muduo_lib/UdpClient.cpp
 
 CMakeFiles/mymuduo.dir/UdpClient.cpp.i: cmake_force
@@ -433,10 +475,24 @@ CMakeFiles/mymuduo.dir/UdpClient.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/UdpClient.cpp.s"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/UdpClient.cpp -o CMakeFiles/mymuduo.dir/UdpClient.cpp.s
 
+CMakeFiles/mymuduo.dir/UdpConnection.cpp.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/UdpConnection.cpp.o: /home/brian/muduo_lib/UdpConnection.cpp
+CMakeFiles/mymuduo.dir/UdpConnection.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/mymuduo.dir/UdpConnection.cpp.o"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/UdpConnection.cpp.o -MF CMakeFiles/mymuduo.dir/UdpConnection.cpp.o.d -o CMakeFiles/mymuduo.dir/UdpConnection.cpp.o -c /home/brian/muduo_lib/UdpConnection.cpp
+
+CMakeFiles/mymuduo.dir/UdpConnection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/UdpConnection.cpp.i"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/brian/muduo_lib/UdpConnection.cpp > CMakeFiles/mymuduo.dir/UdpConnection.cpp.i
+
+CMakeFiles/mymuduo.dir/UdpConnection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/UdpConnection.cpp.s"
+	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/brian/muduo_lib/UdpConnection.cpp -o CMakeFiles/mymuduo.dir/UdpConnection.cpp.s
+
 CMakeFiles/mymuduo.dir/UdpConnector.cpp.o: CMakeFiles/mymuduo.dir/flags.make
 CMakeFiles/mymuduo.dir/UdpConnector.cpp.o: /home/brian/muduo_lib/UdpConnector.cpp
 CMakeFiles/mymuduo.dir/UdpConnector.cpp.o: CMakeFiles/mymuduo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mymuduo.dir/UdpConnector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/mymuduo.dir/UdpConnector.cpp.o"
 	/usr/local/HTZX-arm-4.8.3/bin/arm-linux-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/mymuduo.dir/UdpConnector.cpp.o -MF CMakeFiles/mymuduo.dir/UdpConnector.cpp.o.d -o CMakeFiles/mymuduo.dir/UdpConnector.cpp.o -c /home/brian/muduo_lib/UdpConnector.cpp
 
 CMakeFiles/mymuduo.dir/UdpConnector.cpp.i: cmake_force
@@ -449,11 +505,12 @@ CMakeFiles/mymuduo.dir/UdpConnector.cpp.s: cmake_force
 
 # Object files for target mymuduo
 mymuduo_OBJECTS = \
+"CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o" \
+"CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o" \
 "CMakeFiles/mymuduo.dir/Acceptor.cpp.o" \
 "CMakeFiles/mymuduo.dir/Buffer.cpp.o" \
 "CMakeFiles/mymuduo.dir/Channel.cpp.o" \
 "CMakeFiles/mymuduo.dir/Condition.cpp.o" \
-"CMakeFiles/mymuduo.dir/Connector.cpp.o" \
 "CMakeFiles/mymuduo.dir/CurrentThread.cpp.o" \
 "CMakeFiles/mymuduo.dir/EPollPoller.cpp.o" \
 "CMakeFiles/mymuduo.dir/EventLoop.cpp.o" \
@@ -463,10 +520,12 @@ mymuduo_OBJECTS = \
 "CMakeFiles/mymuduo.dir/InetAddress.cpp.o" \
 "CMakeFiles/mymuduo.dir/Logger.cpp.o" \
 "CMakeFiles/mymuduo.dir/Poller.cpp.o" \
-"CMakeFiles/mymuduo.dir/SerialConnector.cpp.o" \
 "CMakeFiles/mymuduo.dir/SerialPort.cpp.o" \
+"CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o" \
+"CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o" \
 "CMakeFiles/mymuduo.dir/Socket.cpp.o" \
 "CMakeFiles/mymuduo.dir/TcpClient.cpp.o" \
+"CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o" \
 "CMakeFiles/mymuduo.dir/TcpConnection.cpp.o" \
 "CMakeFiles/mymuduo.dir/TcpServer.cpp.o" \
 "CMakeFiles/mymuduo.dir/Thread.cpp.o" \
@@ -475,16 +534,18 @@ mymuduo_OBJECTS = \
 "CMakeFiles/mymuduo.dir/TimerQueue.cpp.o" \
 "CMakeFiles/mymuduo.dir/Timestamp.cpp.o" \
 "CMakeFiles/mymuduo.dir/UdpClient.cpp.o" \
+"CMakeFiles/mymuduo.dir/UdpConnection.cpp.o" \
 "CMakeFiles/mymuduo.dir/UdpConnector.cpp.o"
 
 # External object files for target mymuduo
 mymuduo_EXTERNAL_OBJECTS =
 
+/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/AbstractConnection.cpp.o
+/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/AbstractConnector.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Acceptor.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Buffer.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Channel.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Condition.cpp.o
-/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Connector.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/CurrentThread.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/EPollPoller.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/EventLoop.cpp.o
@@ -494,10 +555,12 @@ mymuduo_EXTERNAL_OBJECTS =
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/InetAddress.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Logger.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Poller.cpp.o
-/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/SerialConnector.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/SerialPort.cpp.o
+/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/SerialPortConnection.cpp.o
+/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/SerialPortConnector.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Socket.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/TcpClient.cpp.o
+/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/TcpClientConnector.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/TcpConnection.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/TcpServer.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Thread.cpp.o
@@ -506,10 +569,11 @@ mymuduo_EXTERNAL_OBJECTS =
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/TimerQueue.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/Timestamp.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/UdpClient.cpp.o
+/home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/UdpConnection.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/UdpConnector.cpp.o
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/build.make
 /home/brian/muduo_lib/lib/libmymuduo.so: CMakeFiles/mymuduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX shared library /home/brian/muduo_lib/lib/libmymuduo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/brian/muduo_lib/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX shared library /home/brian/muduo_lib/lib/libmymuduo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mymuduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

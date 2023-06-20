@@ -15,12 +15,12 @@ public:
     void start() { udpClient_.connect(); }
 
 private:
-    void onConnect(const TcpConnectionPtr& conn)
+    void onConnect(const ConnectionPtr& conn)
     {
         if(conn->connected())
         {
             LOG_INFO("onConnect : new connection [%s] from %s\n", conn->name().c_str(), conn->peerAddr().toIpPort().c_str());
-            conn->send_udp("hello");
+            conn->send("hello");
         }
         else
         {
@@ -28,7 +28,7 @@ private:
         }
     }
 
-    void onMessage(const TcpConnectionPtr& conn, Buffer* buf, Timestamp time)
+    void onMessage(const ConnectionPtr& conn, Buffer* buf, Timestamp time)
     {
         std::string msg = buf->retrieveAllAsString();
         LOG_INFO("onMessage connection[%s] RX : %s ",conn->peerAddr().toIpPort().c_str(), msg.c_str());
